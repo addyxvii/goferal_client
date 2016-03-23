@@ -2,10 +2,31 @@
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+    <link href='app/css/map.css' rel='stylesheet' />
     <title>Go Feral</title>
   </head>
   <body>
-
+    <div class="register" ng-controller="register">
+      <form>
+        Username <br>
+        <input type="text" name="username"><br>
+        Location<br>
+        <input type="text" name"location"><br>
+        Age<br>
+        <input type="number" name="age"><br>
+        email<br>
+        <input type="email" name="email"><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src= "config.js"></script>
+    <script src= "app/login/login.controller.js"></script>
+    <script src="app/map/map.controller.js"></script>
+
   </body>
 </html>
